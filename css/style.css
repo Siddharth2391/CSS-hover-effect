@@ -40,7 +40,7 @@ section .row div{
     animation-delay: -80s;
 }
 section .row div:nth-child(2){
-    animation: animate2 80s infinite linear ;
+    animation: animate2 80s linear infinite  ;
     animation-delay: -40s;
 }
 @keyframes animate1 {
@@ -53,7 +53,7 @@ section .row div:nth-child(2){
 }
 @keyframes animate2 {
     0%{
-        transform: translateX(0);
+        transform: translateX(0%);
     }
     100%{
         transform: translateX(-200%);
@@ -61,11 +61,11 @@ section .row div:nth-child(2){
 }
 
 section .row:nth-child(even) div{
-    animation: animate3 80s infinite linear ;
+    animation: animate3 80s linear infinite  ;
     animation-delay: -80s;
 }
 section .row:nth-child(even) div:nth-child(2){
-    animation: animate4 80s infinite linear ;
+    animation: animate4 80s  linear  infinite;
     animation-delay: -40s;
 }
 @keyframes animate3 {
@@ -81,6 +81,6 @@ section .row:nth-child(even) div:nth-child(2){
         transform: translateX(-200%);
     }
     100%{
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 }
